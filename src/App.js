@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./components/styles/style.css";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Layout from "./components/Layout";
+import EduQuestion from "./components/EduQuestion";
+import EduShare from "./components/EduShare";
+import Total from "./components/Total";
+import FreeTalk from "./components/FreeTalk";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Layout />
+      <main>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Total />} />
+            <Route path="/question" element={<EduQuestion />} />
+            <Route path="/share" element={<EduShare />} />
+            <Route path="/talk" element={<FreeTalk />} />
+          </Routes>
+        </Router>
+      </main>
     </div>
   );
 }
