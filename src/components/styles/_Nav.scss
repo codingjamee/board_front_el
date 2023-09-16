@@ -1,7 +1,11 @@
 button {
-  margin: 20px;
+  margin: 10px;
 }
 
+.active {
+  background-color: #45e3db;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+}
 .nav {
   display: flex;
 }
@@ -31,7 +35,13 @@ button {
   padding: 0;
   border: none;
 }
-.btn:hover {
+.btn.active:before {
+  height: 100%;
+}
+.btn.active:after {
+  width: 100%;
+}
+.btn.active {
   background-color: #89d8d3;
   background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
 }
@@ -61,12 +71,7 @@ button {
   width: 0%;
   height: 0.1px;
 }
-.btn:hover:before {
-  height: 100%;
-}
-.btn:hover:after {
-  width: 100%;
-}
+
 .btn span:before,
 .btn span:after {
   position: absolute;

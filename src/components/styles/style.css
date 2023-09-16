@@ -1,5 +1,10 @@
 button {
-  margin: 20px;
+  margin: 10px;
+}
+
+.active {
+  background-color: #45e3db;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
 }
 
 .nav {
@@ -32,7 +37,15 @@ button {
   border: none;
 }
 
-.btn:hover {
+.btn.active:before {
+  height: 100%;
+}
+
+.btn.active:after {
+  width: 100%;
+}
+
+.btn.active {
   background-color: #89d8d3;
   background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
 }
@@ -62,14 +75,6 @@ button {
 .btn:after {
   width: 0%;
   height: 0.1px;
-}
-
-.btn:hover:before {
-  height: 100%;
-}
-
-.btn:hover:after {
-  width: 100%;
 }
 
 .btn span:before,
@@ -102,18 +107,22 @@ button {
 
 .card {
   width: 80vw;
-  background-color: #fff;
-  background: linear-gradient(#f8f8f8, #fff);
+  background-color: #6de5df;
   box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
   border-radius: 6px;
   overflow: hidden;
   position: relative;
   margin: 1.5rem auto;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 button {
-  margin: 20px;
+  margin: 10px;
+}
+
+.active {
+  background-color: #45e3db;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
 }
 
 .nav {
@@ -146,7 +155,15 @@ button {
   border: none;
 }
 
-.btn:hover {
+.btn.active:before {
+  height: 100%;
+}
+
+.btn.active:after {
+  width: 100%;
+}
+
+.btn.active {
   background-color: #89d8d3;
   background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
 }
@@ -176,14 +193,6 @@ button {
 .btn:after {
   width: 0%;
   height: 0.1px;
-}
-
-.btn:hover:before {
-  height: 100%;
-}
-
-.btn:hover:after {
-  width: 100%;
 }
 
 .btn span:before,
