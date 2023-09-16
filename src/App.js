@@ -1,6 +1,6 @@
 import "./App.css";
 import "./components/styles/style.css";
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import EduQuestion from "./components/EduQuestion";
 import EduShare from "./components/EduShare";
@@ -12,14 +12,12 @@ function App() {
     <div>
       <Layout />
       <main>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Total />} />
-            <Route path="/question" element={<EduQuestion />} />
-            <Route path="/share" element={<EduShare />} />
-            <Route path="/talk" element={<FreeTalk />} />
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path="/" element={<Total />} />
+          <Route path="/question" element={<EduQuestion />} />
+          <Route path="/share" element={<EduShare />} />
+          <Route path="/talk" element={<FreeTalk />} />
+        </Routes>
       </main>
     </div>
   );

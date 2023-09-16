@@ -1,4 +1,4 @@
 const FreeTalk = () => {
-  return <div>FreeTalk</div>;
+  return <div className="card">FreeTalk</div>;
 };
 export default FreeTalk;

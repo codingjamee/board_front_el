@@ -1,4 +1,4 @@
 const EduShare = () => {
-  return <div>EduShare</div>;
+  return <div className="card">EduShare</div>;
 };
 export default EduShare;
