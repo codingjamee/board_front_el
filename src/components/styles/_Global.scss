@@ -2,9 +2,15 @@
   width: 80vw;
   background-color: #6de5df;
   box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
-  border-radius: 6px;
+  border-radius: 3px;
   overflow: hidden;
   position: relative;
-  margin: 1.5rem auto;
+  margin: 0.5rem auto;
   padding: 1rem;
+}
+
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
